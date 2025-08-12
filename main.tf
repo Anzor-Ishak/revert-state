@@ -5,12 +5,13 @@ terraform {
   }
 }
 
-resource "random_password" "db" {
-  length  = 24
-  special = true
-}
+//removing resource & output to test state
+# resource "random_password" "db" {
+#   length  = 24
+#   special = true
+# }
 
-output "db_password" {
-  value     = random_password.db.result
-  sensitive = true
-}
+# output "db_password" {
+#   value     = random_password.db.result
+#   sensitive = true
+# }
