@@ -5,7 +5,7 @@ terraform {
   }
 }
 
-removing resource & output to test state
+// removing resource & output to test state
  resource "random_password" "db" {
    length  = 24
    special = true
